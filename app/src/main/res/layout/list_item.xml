@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/li_iv"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_foreground"/>
+
+    <TextView
+        android:id="@+id/li_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/li_iv"
+        app:layout_constraintTop_toTopOf="@+id/li_iv"
+        tools:text="Title"/>
+
+    <TextView
+        android:id="@+id/li_tv_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/li_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/li_iv"
+        app:layout_constraintTop_toBottomOf="@+id/li_tv_title"
+        tools:text="Descriptions"/>
+
+</android.support.constraint.ConstraintLayout>
